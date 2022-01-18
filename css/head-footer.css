@@ -72,8 +72,26 @@ div a{
     grid-template-columns: 100%;
     padding: 5% 3%;
 }
-.head3 div img{
+.head3 div {
 width: 100%;
+height: 500px;
+background-image: url("../img/adv.jpg");
+background-size:contain;
+background-repeat: no-repeat;
+animation: slidbar 10s ease-in-out 2s 20 alternate forwards  ;
+}
+@keyframes slidbar{
+0%
+{ content: url("../img/adv.jpg");}
+25%
+{ content: url("../img/bag.jpg");}
+50%
+{ content: url("../img/mobile.jpg");}
+75%
+{ content: url("../img/bags.jpg");}
+100%
+{ content: url("../img/mobile2.jpg");}
+
 }
 /* finsh header*/
 /*section footer */
