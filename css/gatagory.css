@@ -106,3 +106,17 @@ margin: 1% 2% 3%;
 .price-level span{
     font-size: 12px;
 }
+.more-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.more{
+    width: 79.4%;
+    margin: 0% 0 2% .5%;
+    background-color: #2675C2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -10,8 +10,9 @@ function lange(){
 
    
 }
+// slaide adv
 var slaider=document.querySelector(".head-imges");
-var imag=['adv.jpg','bag.jpg','mobile.jpg','bags.jpg','mobile2.jpg'];
+var imag=['adv.jpg','bag.jpg','mobile.jpg','mobile2.jpg'];
 var ind=0 ;// current image index
 function Pv(){
 
@@ -28,3 +29,34 @@ function Nt(){
 function SetImg(){
     return slaider.setAttribute('src','img/'+ imag[ind]);
 }
+// search
+const search=document.getElementById('search');
+const book_search=document.querySelectorAll('.slider-container-item');
+search.addEventListener('keyup',function(e){
+    book_search.forEach(element =>{
+        if(element.textContent.includes(search.value)){
+            element.style.display="block";
+        }
+        else{
+            element.style.display="none";
+        }
+    } )
+});
+//counter 
+var counter=0;
+var card=document.getElementsByClassName('fa-cart-plus');
+var bask=document.getElementById('counter');
+
+for(let b=0 ;b<card.length;b++){
+card[b].addEventListener('click',(e)=>{
+    e.preventDefault();
+    bask.style.display="flex";
+    counter++;
+    bask.innerHTML=counter;
+    
+}
+
+)
+}
+
+

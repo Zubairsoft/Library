@@ -26,6 +26,17 @@
         grid-template-columns: 100% ;
     
     }
+    .head-img div i{
+        display: none;
+    }
+    #counter{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .crical{
+        height: 40px;
+    }
     .dept-title1{
         font-size: 12px;
         padding: 10px 0;
@@ -86,6 +97,10 @@
     width: 20%;
     margin: 0 auto;
 }
+.btn-review{
+    width: 20%;
+    font-size: 14px;
+}
 /* star cheakout page */
 .cheak-container{
     display: block;
@@ -108,6 +123,9 @@
 /* star gatagry page */
 .gata-main{
     grid-template-columns: 100%;
+}
+.more{
+    width: 100%;
 }
 .gata-type{
  grid-template-columns: 50% 50%;

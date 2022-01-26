@@ -1,5 +1,5 @@
 const countdown=()=>{
-    const upperdate=new Date('jan 30 , 2022 00:00:00').getTime();
+    const upperdate=new Date('mar 30 , 2022 00:00:00').getTime();
     const currentdate=new Date().getTime();
     const diffdate=upperdate-currentdate;
 
@@ -17,10 +17,12 @@ const countdown=()=>{
     var h=document.getElementById('hour');
     var m=document.getElementById('mint');
     var s=document.getElementById('second');
+    
     d.innerHTML=remain_day;
     h.innerHTML=remain_hour;
     m.innerHTML=remain_mint;
     s.innerHTML=remain_second;
+
 
 
 }
