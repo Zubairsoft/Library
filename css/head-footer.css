@@ -7,6 +7,9 @@ body{
     direction: rtl;
     font-family: Tajawal,sans-serif;
 }
+:root{
+    --color:#D4070E;
+}
 /* section head1 */
 .head1{
     background-color: #F9FAFC;
@@ -70,15 +73,18 @@ div a{
 .head3{
     display: grid;
     grid-template-columns: 100%;
-    padding: 5% 3%;
+    padding: 5% 3% 0;
 }
 .head3 div {
 width: 100%;
-height: 500px;
-background-image: url("../img/adv.jpg");
-background-size:contain;
-background-repeat: no-repeat;
-animation: slidbar 10s ease-in-out 2s 20 alternate forwards  ;
+
+
+}
+.head3 div img {
+    width: 100%;
+   
+animation: slidbar 10s ease-in-out 2s 100 alternate forwards  ;
+margin-bottom: 3%;
 }
 @keyframes slidbar{
 0%

@@ -26,6 +26,105 @@
         grid-template-columns: 100% ;
     
     }
+    .dept-title1{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .dept-title2{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .dept-title3{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .dept-title4{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+.dept-title5{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.dept-title6{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.dept-title7{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.books-container{
+    grid-template-columns:  50% 50% 50% 50% 50% 50% ;
+
+}
+.arrow-book1{
+    display: none;
+}
+.arrow-book2{
+    display: none;
+}
+.heading{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* end index page */
+.detail-container{
+    grid-template-columns: 90%;
+    margin: 0 auto;
+    
+}
+.book .book-align img{
+    width:  60%;
+    margin: 2% auto;
+   
+
+}
+.book2 img {
+    width: 20%;
+    margin: 0 auto;
+}
+/* star cheakout page */
+.cheak-container{
+    display: block;
+}
+
+.shopping-container{
+    width: 100%;
+}
+.cheak-older{
+    width: 100%;
+}
+.note{
+    width: 80%;
+    margin-bottom: 5%;
+}
+.cont{
+    width: 15%;
+    margin-top: 2%;
+}
+/* star gatagry page */
+.gata-main{
+    grid-template-columns: 100%;
+}
+.gata-type{
+ grid-template-columns: 50% 50%;
+}
+.sort select{
+    width: 25%;
+}
+.sort{
+    justify-content: center;
+}
+.result{
+    margin-bottom: 10%;
+}
+.line{
+    width: 93%;
+}
+
     .footer1 div{
         display: block;
         width: 100%;

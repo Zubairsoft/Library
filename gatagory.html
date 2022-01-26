@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/head-footer.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gatagory.css">
     <link rel="stylesheet" href="css/quiry.css">
-    <title>libary</title>
+    <title>gatagory</title>
 </head>
-<body>
+<body id="display-h">
     <!--start header-->
     <header>
         <div class="head1">
             
-            <div><a href="#" id="login" onclick="login()"><span> <i class="fas fa-user"></i> ادخل لحسابك او سجل الان</span></a></div>
+            <div><a href="#" onclick="login()"><span> <i class="fas fa-user"></i> ادخل لحسابك او سجل الان</span></a></div>
             <div><a href="#"><span> <i class="fas fa-star"></i>الرئيسية</span></a></div>
             <div><a href="#"><span> <i class="fas fa-truck-moving"></i>من نحن</span></a></div>
             <div><a href="#"><span> <i class="fas fa-phone"></i>اتصل بنا</span></a></div>
@@ -42,6 +43,7 @@
         </div>
         <div class="head3">
             <P class="timer"><span style="color: yellow;font-size: 20px;">عروض خاصة</span>  <span id="day"> </span> <span> يوم</span><span>-</span><span id="hour"></span ><span>ساعة</span><span>-</span><span id="mint"></span><span>دقيقة</span><span>-</span><span id="second"></span><span>تانية</span></P>
+
             <div >
              <img src="img/adv.jpg" alt="">
                 
@@ -62,6 +64,8 @@
                <p class="link-align"> <a href="#" onclick="s_login()"> ليس لديك حساب</a></p>
                <p id="out" class="out">خروج</p>
 
+               
+
             </div>
 
         </div>
@@ -77,6 +81,7 @@
                 <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
                 <button class="form-button-sing">  ارسال رمز التحقق </button>
                 <input type="text" placeholder="اسم الاول " class="form-input">
+        
                 <input type="text" placeholder="اسم العائلة " class="form-input">
                 <input type="email" placeholder="البريد الاكتروني   " class="form-input">
                 <input type="email" placeholder=" تاكيد البريد الاكتروني " class="form-input">
@@ -95,287 +100,118 @@
             </div>
             </div>
     </div>
-    <h2 class="heading">تصفح حسب القسم</h2>
-    <!--start department -->
-    <div class="dept-container">
-        <div>
-            <i class="fas fa-arrow-right"></i>
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon"> 
-                    <i class="fas fa-user"></i>
+    <!-- star gatagory-->
+    <div class="sort"> 
+        <span> الترتيب بحسب</span>
+        <select name="" id=""  >
+            <option value="">الرجاء الاختيار</option>
+        </select>
 
-                </div>
+    </div>
+
+<div class="gata-main">
+    <div class="gata-select">
+        <nav > 
+            <ul class="ul" >
+                <li>  الرئيسية  </li>
+                <li> / الكتب العربية  </li>
+                <li> / الكتب الاكترونية  </li>
+
+            </ul>
+
+        </nav>
+        <div class="book-e-section">
+            <p> كتب الكترونية</p>
+
+        </div>
+        <div class="result"> 
+            <div class="b-result">
+                <p> تصفح النتائج</p>
+
             </div>
-            <p class="dept-title1">
-                دين
-            </p>
+            <div class="c-result">
+                <p>العلامة التجارية</p>
 
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-history"> 
-                    <i class="fas fa-user"></i>
-
-                </div>
             </div>
-            <p class="dept-title2">
-                تاريخ 
-            </p>
+            <div class="c-result">
+                <p> السعر</p>
 
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-story"> 
-                    <i class="fas fa-user"></i>
-
-                </div>
             </div>
-            <p class="dept-title3">
-                روايات
-            </p>
-
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-p"> 
-                    <i class="fas fa-user"></i>
-
+            <div class="c-result">
+                <div class="price-container">
+                    <div class="squar"></div>
+                    <div class="line" ></div>
+                    <div class="squar"></div>
                 </div>
-            </div>
-            <p class="dept-title4">
-               سياسة 
-            </p>
-
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-c"> 
-                    <i class="fas fa-user"></i>
-
+                <div class="price-level">
+                    <span> رس 0</span>
+                    <span> رس 150</span>
                 </div>
+
             </div>
-            <p class="dept-title5">
-                اقتصاد
-            </p>
+            <div class="c-result">
+                <p>صيغة الكتاب</p>
 
-        </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-cook"> 
-                    <i class="fas fa-user"></i>
-
-                </div>
             </div>
-            <p class="dept-title6">
-                طبخ
-            </p>
+
+
+
+
 
         </div>
-        <div class="dept-name">
-            <div class="parent-dept-icon">
-                <div class="dept-icon-e"> 
-                    <i class="fas fa-user"></i>
-
-                </div>
-            </div>
-            <p class="dept-title3">
-                تربية
-            </p>
-
-        </div>
-        <div>
-            <i class="fas fa-arrow-left" ></i>
-        </div>
-
-
-
 
 
     </div>
-    <!--end depatment -->
-    <!--star books-->
-    <h2 class="heading">العروض الحالية</h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
-        </div>
-
-
-
-    </div>
-    <h2 class="heading">الكتب الدينية</h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
-        </div>
+    <div class="gata-type">
         
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
 
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
 
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
 
-    </div>
-    <h2 class="heading">الكتب التاريخية</h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
         <div class="slider-container-item">
             <img src="img/book1.jpg" alt="" id="display-slide">
             <p class="p-title">كتاب الاكتروني </p>
@@ -390,79 +226,26 @@
             </div>
             <i class="fas fa-star"></i>
         </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
         </div>
 
 
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
 
-    </div>
-    <h2 class="heading">السياسة</h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
+
         <div class="slider-container-item">
             <img src="img/book1.jpg" alt="" id="display-slide">
             <p class="p-title">كتاب الاكتروني </p>
@@ -477,79 +260,10 @@
             </div>
             <i class="fas fa-star"></i>
         </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
         </div>
 
 
 
-    </div>
-    <h2 class="heading">الاقتصاد </h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
         <div class="slider-container-item">
             <img src="img/book1.jpg" alt="" id="display-slide">
             <p class="p-title">كتاب الاكتروني </p>
@@ -564,79 +278,10 @@
             </div>
             <i class="fas fa-star"></i>
         </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
         </div>
 
 
 
-    </div>
-    <h2 class="heading">الطبخ </h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
         <div class="slider-container-item">
             <img src="img/book1.jpg" alt="" id="display-slide">
             <p class="p-title">كتاب الاكتروني </p>
@@ -651,161 +296,155 @@
             </div>
             <i class="fas fa-star"></i>
         </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
         </div>
 
+
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+
+
+
+        <div class="slider-container-item">
+            <img src="img/book1.jpg" alt="" id="display-slide">
+            <p class="p-title">كتاب الاكتروني </p>
+            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
+            <p class="p-price">69 ريال</p>
+            <p class="p-taxt"> شامل الضريبة</p>
+            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
+            <div class="parent-add-shop">
+                <i class="fas fa-star"></i>
+            <div class="add-shop" > 
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
 
 
     </div>
-    <h2 class="heading">افضل الروايات الرومانسية </h2>
-    <div class="books-container">
-        <div class="arrow-book1">
-            <i class="fas fa-arrow-right" ></i>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="slider-container-item">
-            <img src="img/book1.jpg" alt="" id="display-slide">
-            <p class="p-title">كتاب الاكتروني </p>
-            <p class="p-s-title">ابابيل كتاب الاكتروني</p>
-            <p class="p-price">69 ريال</p>
-            <p class="p-taxt"> شامل الضريبة</p>
-            <p class="p-text"> صيغ اخرى: <span>كتاب مطبوع</span></p>
-            <div class="parent-add-shop">
-                <i class="fas fa-star"></i>
-            <div class="add-shop" > 
-                <i class="fas fa-cart-plus"></i>
-            </div>
-            <i class="fas fa-star"></i>
-        </div>
-        </div>
-        <div class="arrow-book2">
-            <i class="fas fa-arrow-left" ></i>
-        </div>
 
 
+</div>
 
-    </div>
     <!--star footer-->
     <footer>
         <div class="footer1">
