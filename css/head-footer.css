@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    direction: rtl;
+    /* direction: rtl; */
     font-family: Tajawal,sans-serif;
 }
 :root{
@@ -80,13 +80,21 @@ width: 100%;
 
 
 }
-.head3 div img {
+.head-img{
+    align-items: center;
+    display: flex;
     width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.head3 div img {
+    width: 95%;
+    margin: 0 auto;
    
-animation: slidbar 10s ease-in-out 2s 100 alternate forwards  ;
+/* animation: slidbar 10s ease-in-out 2s 100 alternate forwards  ; */
 margin-bottom: 3%;
 }
-@keyframes slidbar{
+/* @keyframes slidbar{
 0%
 { content: url("../img/adv.jpg");}
 25%
@@ -98,7 +106,7 @@ margin-bottom: 3%;
 100%
 { content: url("../img/mobile2.jpg");}
 
-}
+} */
 /* finsh header*/
 /*section footer */
 .footer1{

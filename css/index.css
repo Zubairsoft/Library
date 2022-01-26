@@ -196,6 +196,10 @@ color:#A9093D;
     margin: 0 auto;
     overflow-x: scroll;
     grid-auto-flow: column;
+
+}
+.books-container::-webkit-scrollbar{
+    height: 0;
 }
 
 .detail-container{
@@ -430,6 +434,8 @@ right: 25%;
     color: white;
     padding: 10px;
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
 }
 .timer span{
 color: white;
